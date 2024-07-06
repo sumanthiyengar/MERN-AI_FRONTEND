@@ -8,21 +8,21 @@ import {
     {
       name: "Push to deploy",
       description:
-        "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+        "Our solution offers seamless integration, automated workflows, and robust support to ensure your app is up and running in no time.",
       href: "#",
       icon: CloudArrowUpIcon,
     },
     {
       name: "SSL certificates",
       description:
-        "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+        "It ensure secure, encrypted communication between your server and clients. They protect sensitive data, build trust, and are essential for maintaining privacy and data integrity in online transactions.",
       href: "#",
       icon: LockClosedIcon,
     },
     {
       name: "Simple queues",
       description:
-        "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+        "Simple queues manage tasks by placing them in a line, ensuring that they are processed in the order they were received. This straightforward method helps in organizing and handling tasks efficiently",
       href: "#",
       icon: ArrowPathIcon,
     },
@@ -40,9 +40,7 @@ import {
               Everything you need to deploy your app
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-              In mi viverra elit nunc.
+            Streamlined tools and services for rapid deployment. From setup to launch, ensure your application is live with minimal effort
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

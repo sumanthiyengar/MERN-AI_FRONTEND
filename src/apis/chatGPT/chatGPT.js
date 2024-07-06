@@ -1,9 +1,11 @@
 import axios from "axios";
-//=======Registration=====
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
+//=======Generate Content=====
 export const generateContentAPI = async (userPrompt) => {
   const response = await axios.post(
-    "http://localhost:8090/api/v1/openai/generate-content",
+    `${apiUrl}/api/v1/openai/generate-content`,
     {
       prompt: userPrompt,
     },

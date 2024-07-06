@@ -1,9 +1,11 @@
 import axios from "axios";
-//=======Stripe Payment=====
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
+//=======Stripe Payment=====
 export const handleFreeSubscriptionAPI = async () => {
   const response = await axios.post(
-    "http://localhost:8090/api/v1/stripe/free-plan",
+    `${apiUrl}/api/v1/stripe/free-plan`,
     {},
     {
       withCredentials: true,
@@ -11,12 +13,12 @@ export const handleFreeSubscriptionAPI = async () => {
   );
   return response?.data;
 };
-//=======Stripe  Payment intent=====
 
+//=======Stripe Payment Intent=====
 export const createStripePaymentIntentAPI = async (payment) => {
   console.log(payment);
   const response = await axios.post(
-    "http://localhost:8090/api/v1/stripe/checkout",
+    `${apiUrl}/api/v1/stripe/checkout`,
     {
       amount: Number(payment?.amount),
       subscriptionPlan: payment?.plan,
@@ -27,11 +29,11 @@ export const createStripePaymentIntentAPI = async (payment) => {
   );
   return response?.data;
 };
-//=======Verify  Payment =====
 
+//=======Verify Payment=====
 export const verifyPaymentAPI = async (paymentId) => {
   const response = await axios.post(
-    `http://localhost:8090/api/v1/stripe/verify-payment/${paymentId}`,
+    `${apiUrl}/api/v1/stripe/verify-payment/${paymentId}`,
     {},
     {
       withCredentials: true,
